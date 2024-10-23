@@ -1,0 +1,105 @@
+/* About.css */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"); */
+
+:root {
+  --primary-color: #0671b9;
+  --secondary-color: #f0f0f0;
+  --text-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0 important;
+}
+
+.about {
+  background-color: var(--secondary-color);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease;
+  color: #f0f0f0;
+}
+
+.about-description {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease;
+  color: #f0f0f0;
+}
+
+.token-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.token {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(161, 88, 88, 0.1);
+  padding: 20px;
+  width: 30%;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.token img {
+  width: 50px;
+  height: 50px;
+}
+
+.token h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.token p {
+  color: var(--text-color);
+}
+
+.token:hover {
+  transform: scale(1.05);
+  animation: pulse 0.5s;
+}
+
+.video-container {
+  margin-top: 40px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .token {
+    width: 80%; /* Make tokens wider on smaller screens */
+  }
+
+  .about-title {
+    font-size: 2em;
+  }
+
+  .about-description {
+    font-size: 1em;
+  }
+}
+
+
+
+.text-div{
+  background-color: #7c8286;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-left: 10px;
+}

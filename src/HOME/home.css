@@ -1,0 +1,236 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"); */
+
+:root {
+  --red: #b90713;
+  --gray: #2e2e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0; 
+}
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 72px);
+  padding: 10px 20px;
+  margin-top: px;
+  height: 100%;
+  background-color: #bda9aa; /* Use var(--red) for a red background */
+  height: 90%;
+  padding-bottom: 100px;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  width: 50%;
+  background-color: #af8888;
+  padding: 20px;
+  box-shadow: #0671b9;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.hero h1 {
+  font-weight: 750;
+  /* line-height: 102px; */
+  font-size: 70px;
+  transform: scale(0);
+  animation: zoomIn 1.5s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  to {
+      transform: scale(1);
+  }
+}
+
+
+.hero p {
+  font-weight: 600;
+  color:white;
+  max-width: 400px;
+  animation: slideFade 1s ease-out;
+}
+.hero p:hover{
+  color: #050701;
+}
+@keyframes slideFade {
+  from { opacity: 0; transform: translateX(-100%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.btn {
+  display: flex;
+  gap: 40px;
+}
+
+.btn button {
+  font-size: 24px;
+  background-color: #0671b9;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn button:hover{
+  background-color: #350ff2;
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.brand-icons {
+  display: flex;
+  gap: 16px;
+}
+.image1{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center ;
+ width: 50%;
+}
+.image {
+  flex-shrink: 0;
+  transform: rotate(0deg);
+  height: 450px;
+  width: 404px;
+  animation: rotateIn 6s  linear infinite;
+}
+@keyframes rotateIn {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* RESPONSIVE STYLING */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide the menu on smaller screens */
+  }
+
+  nav button {
+    display: inline-block;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    max-width: 100%;
+
+  }
+
+  .hero-btn {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-btn button {
+    font-size: 18px;
+  }
+
+  .shopping p {
+    font-size: 12px;
+  }
+
+  .brand-icons {
+    display: flex;
+
+  }
+  
+
+  
+  
+  .image img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-btn button {
+    font-size: 16px;
+  }
+}
+.shopingApp{
+ width: 120px;
+}
+.shopingApp:hover{
+  color: #0671b9;
+ 
+}
+
+.footer{
+  height: 150px;
+  background-color: #2f3335;
+  color: #0671b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.image-footer img{
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.text{
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #947778;
+  font-size: 24px;
+  transform: scale(0);
+  animation: zoomIn 1.5s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  to {
+      transform: scale(1);
+  }
+}

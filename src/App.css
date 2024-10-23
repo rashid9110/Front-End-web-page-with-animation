@@ -1,0 +1,94 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #333;
+  padding: 10px 20px; /* Add padding for spacing */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Align logo on the left and login on the right */
+  align-items: center; /* Center items vertically */
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Logo */
+/* Remove hover effects for the logo */
+.logo a {
+  display: inline-block;
+}
+
+.logo a:hover {
+  background-color: transparent; /* No background change */
+  transform: none; /* No scaling */
+  transition: none; /* Disable the transition */
+}
+
+/* Make sure the logo remains clickable but without any visual effect */
+.logo-image {
+  height: 50px;
+  width: auto;
+}
+
+
+/* Centered navigation links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* This will push login to the right */
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #6264ee;
+  color: #fff;
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+/* Align login to the right */
+.login {
+  margin-left: 20px; /* Space between login and the navigation links */
+}
+
+.login a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #6264ee; /* Optional background color for the login button */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login a:hover {
+  background-color: #444;
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
